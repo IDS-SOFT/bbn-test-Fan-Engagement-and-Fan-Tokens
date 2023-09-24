@@ -14,7 +14,7 @@ async function main() {
 
   try {
     // Call functions here
-    const createproduct = await contract.addFan(0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266);
+    const createproduct = await contract.addFan();
   await createproduct.wait();
   console.log("product created");
   console.log("The transaction hash is:", createproduct.hash);
